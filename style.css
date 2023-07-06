@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.image_container{
+    background-image: url(unsplash_pHPzdEHN6Os.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    
+}
+.image-text{
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.image-text h1{
+    font-size: 60px;
+}
+.image-text span{
+    font-size: 25px;
+}
+.work-container{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 60px;
+    margin-top:2px;
+}
+.work-container h1{
+    font-size: 50px;
+}
+.work-container span{
+    font-size: 70px;
+}
+.work{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+}
+.card{
+    max-width: 320px;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+
+}
+.grid-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-content{
+    padding: 5px;
+}
+.card:hover{
+    transform: scale(1.04);
+}
+.bottom-container{
+    display: flex;
+    flex-direction: row;
+}
+.contact-me{
+    background-color: #515603;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 720px;
+    height: 300px;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.contact-me p{
+    font-size: 30px;
+    margin: 40px;
+}
+.about-me{
+    background-color: #722300;;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 720px;
+    height: 300px;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+@media(max-width:786px){
+    .image_container{
+        min-height: 50vh;
+    }
+    .image-text{
+        padding: 10px 0;
+    }
+    .image-text span{
+        font-size: 12px;
+    }
+    .image-text h1{
+        font-size: 30px;
+    }
+    .work-container h1{
+        font-size: 20px;
+    }
+    .bottom-container{
+        flex-direction: column;
+    }
+    .about-me{
+        font-size: 10px;
+        width: 400px;
+        height: 250px;
+        margin-top: 0px;
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+    .contact-me{
+        font-size: 10px;
+        width: 400px;
+        height: 250px;
+        margin-left: 2px;
+
+    }
+    .contact-me p{
+        font-size: 10px;
+        
+    }
+}
